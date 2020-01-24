@@ -118,8 +118,8 @@ li {
   background: url(../images/bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 /*=================================
@@ -136,42 +136,6 @@ header h1 {
           align-items: center;
 }
 
-
-.plate {
-  width: 80%;
-  position: absolute;
-  z-index: 100;
-  bottom: -10px;
-  left:-80%;
-  -webkit-animation-name: plate;
-          animation-name: plate;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  display: block;
-}
-
-@-webkit-keyframes plate{
-  0%   { bottom:15px; left:-500px;}
-  10%  { bottom:15px; left:-32px;}
-  90%  { bottom:15px; left:-32px;}
-  100% { bottom:15px; left:-500px;}
-}
-
-@keyframes plate{
-  0%   { bottom:15px; left:-500px;}
-  10%  { bottom:15px; left:-32px;}
-  90%  { bottom:15px; left:-32px;}
-  100% { bottom:15px; left:-500px;}
-}
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -180,29 +144,87 @@ header h1 {
   main styling starts here
 =================================*/
 
-figure {
-  position: absolute;
-}
+/* plate styling starts here */    
 
-.sad_sonali {
-  width: 70%;
+.plate {
+  width: 80%;
+  bottom: -10px;
+  display: block;
+  left:-80%;
   position: absolute;
   z-index: 100;
-  bottom: 85px;
-  right: -75%;
-  display: block;
-  -webkit-animation: right-fade-sonali;
-  animation: right-fade-sonali;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-name: plate;
+          animation-name: plate;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes plate{
+  0%   {
+    bottom:15px;
+    left:-80%;
+    }
+  10%  {
+    bottom:15px; 
+    left:-10%;
+  }
+  90%  { 
+    bottom:15px; 
+    left:-10%;
+  }
+  100% { 
+    bottom:15px; 
+    left:-80%;
+  }
+}
+
+@keyframes plate{
+  0%   { 
+    bottom:15px;
+     left:-80%;
+    }
+  10%  {
+     bottom:15px; 
+     left:-10%;
+    }
+  90%  {
+     bottom:15px; 
+     left:-10%;
+    }
+  100% {
+     bottom:15px;
+      left:-80%;
+    }
+}
+/* plate styling ends here */    
+
+/* sad-sonali styling starts here */    
+
+.sad_sonali {
+  width: 70%;
+  bottom: 85px;
+  display: block;
+  position: absolute;
+  right: -80%;
+  z-index: 100;
+  -webkit-animation: right-fade-sonali;
+          animation: right-fade-sonali;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
   -webkit-animation-timing-function:ease-out;
           animation-timing-function:ease-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 @-webkit-keyframes right-fade-sonali {
@@ -250,96 +272,102 @@ figure {
     right:-80%;
   }
 }
+/* sad-sonali styling ends here */    
+
+/* boring-sandwich styling starts here */    
 
 .boring_sandwich {
   width: 70%;
   color: #ed1c24;
+  display: block;
   font-size: 36px;
+  left: -80%;
+  position: absolute;
   text-transform: capitalize;
   text-align: center;
   top: 20%;
-  left: -80%;
-  position: absolute;
   z-index: 100;
-  display: block;
   -webkit-animation: left-fade-span;
   animation: left-fade-span;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
   -webkit-animation-timing-function:ease-out;
           animation-timing-function:ease-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 @-webkit-keyframes left-fade-span {
-0%   { top:110px;
-    left:-80%;
+0%   {
+  top:110px;
+  left:-80%;
   }
 10%  { 
   top:110px;
-    left: 50%;
-    -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
     }
 40%  {
-    top:110px;
-    left: 50%;
-      -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
-    }
+  top:110px;
+  left: 50%;
+  -webkit-transform: translateX(-50%); 
+          transform: translateX(-50%);
+  }
 85%  {
-    top:110px;
-    left: 50%; 
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+  top:110px;
+  left: 50%; 
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
     }
 100% {
-    top:110px;
-    left:-500px;
+  top:110px;
+  left:-80%;
   }
 }
 
 @keyframes left-fade-span {
 0%   {
   top:110px;
-    left:-80%;
+  left:-80%;
   }
 10%  { 
   top:110px;
-    left: 50%;
-    -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
     }
 40%  {
-    top:110px;
-    left: 50%;
-      -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
+  top:110px;
+  left: 50%;
+  -webkit-transform: translateX(-50%); 
+          transform: translateX(-50%);
     }
 85%  {
-    top:110px;
-    left: 50%; 
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+  top:110px;
+  left: 50%; 
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
     }
 100% {
     top:110px;
-    left:-500px;
+    left:-80%;
   }
 } 
+/* boring-sandwich styling ends here */    
+
+/* sandwich-two styling starts here */    
 
 .sandwich_one {
   width: 70%;
-  position: absolute;
-  z-index: 100;
   bottom: 10px;
-  left:-80%;
   display: block;
+  left:-80%;
+  position: absolute;
   z-index: 1;
 -webkit-animation-name: sandwich-one;
         animation-name: sandwich-one;
@@ -347,10 +375,10 @@ figure {
         animation-iteration-count: 1;
 -webkit-animation-direction: normal;
         animation-direction: normal;
-        -webkit-animation-duration: 8.6s;
-                animation-duration: 8.6s;
-        -webkit-animation-delay: 3.8s;
-                animation-delay: 3.8s;
+-webkit-animation-duration: 8.6s;
+        animation-duration: 8.6s;
+-webkit-animation-delay: 3.8s;
+        animation-delay: 3.8s;
 }
 
 @-webkit-keyframes sandwich-one{
@@ -369,11 +397,10 @@ figure {
 
 .sandwich_two {
   width: 50%;
-  position: absolute;
-  z-index: 200;
   bottom: 35px;
-  left:-80%;
   display: block;
+  left:-80%;
+  position: absolute;
   z-index: 1;
   -webkit-animation-name: sandwich-two;
           animation-name: sandwich-two;
@@ -381,10 +408,10 @@ figure {
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 8.6s;
-                  animation-duration: 8.6s;
-          -webkit-animation-delay: 3.8s;
-                  animation-delay: 3.8s;
+  -webkit-animation-duration: 8.6s;
+          animation-duration: 8.6s;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
 }
 
 @-webkit-keyframes sandwich-two{
@@ -400,14 +427,16 @@ figure {
   95%  { left:-0%;}
   100% { left:-80%;}
 }
+/* sandwich-two styling ends here */    
+
+/* sandwich-three styling starts here */    
 
 .sandwich_three {
   width: 50%;
-  position: absolute;
-  z-index: 200;
   bottom: 34px;
-  left:-80%;
   display: block;
+  left:-80%;
+  position: absolute;
   z-index: 2;
   -webkit-animation-name: sandwich-three;
           animation-name: sandwich-three;
@@ -415,53 +444,16 @@ figure {
           animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-          -webkit-animation-duration: 8.6s;
-                  animation-duration: 8.6s;
-          -webkit-animation-delay: 3.8s;
-                  animation-delay: 3.8s;
+  -webkit-animation-duration: 8.6s;
+          animation-duration: 8.6s;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
 }
 
 @-webkit-keyframes sandwich-three{
-  0%   { left:-83%;}
-  5%   { left:1%;}
-  10%  {
-   left:1%; 
-    top:83%;
-  }
-  15%  { 
-    left:1%; 
-    top:76%;
-  }
-  25%  { 
-    left:1%; 
-    top:76%;
-  }
-  50%  { 
-    left:1%; 
-    top:76%;
-  }
-  60%  { 
-    left:1%; 
-    top:83%;
-  }
-  85%  { 
-    left:1%; 
-    top:83%;
-  }
-  95%  { 
-    left:1%; 
-    top:83%;
-  }
-  100% { 
-    left:-80%;
-    top:83%;
-   }
-}
-
-@keyframes sandwich-three{
   0%   { 
-    left:-83%;
     bottom: 34px;
+    left:-83%;
   }
   5%   { left:1%;}
   10%  {
@@ -498,14 +490,57 @@ figure {
    }
 }
 
+@keyframes sandwich-three{
+  0%   { 
+    bottom: 34px;
+    left:-83%;
+  }
+  5%   { left:1%;}
+  10%  {
+   left:1%; 
+    top:83%;
+  }
+  15%  { 
+    left:1%; 
+    top:76%;
+  }
+  25%  { 
+    left:1%; 
+    top:76%;
+  }
+  30%  { 
+    left:1%; 
+    top:83%;
+  }
+  70%  { 
+    left:1%; 
+    top:83%;
+  }
+  85%  { 
+    left:1%; 
+    top:83%;
+  }
+  95%  { 
+    left:1%; 
+    top:83%;
+  }
+  100% { 
+    left:-80%;
+    top:83%;
+   }
+}
+/* sandwich-three styling ends here */    
+
+/* knife styling starts here */    
+
 .knife {
   width: 25%;
-  position: absolute;
   bottom: 50px;
-  left: 15%;
-  top: 80%;
   display: block;
+  left: 15%;
   opacity: 0;
+  position: absolute;
+  top: 80%;
   z-index: 1;
   -webkit-transform: rotateX(220deg);
           transform: rotateX(220deg);
@@ -515,90 +550,92 @@ figure {
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 1s;
-                  animation-duration: 1s;
-          -webkit-animation-delay: 5s;
-                  animation-delay: 5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 @-webkit-keyframes knife {
   0%   {
-      bottom: 50px;
-      opacity: 0;
-      -webkit-transform: rotateX(220deg);
-              transform: rotateX(220deg);
-      left:15%;
-    }
+    bottom: 50px;
+    left:15%;
+    opacity: 0;
+    -webkit-transform: rotate(295deg);
+            transform: rotate(295deg);
+      }
   10%  { 
-    left: 15%;
-    bottom: 30px;
+    bottom: 40px;
+    left:20%;
     opacity: 0;
       }
   40%  {
-    left: 20%;
-    bottom: 20px;
+    bottom: 30px;
+    left:25%;
     opacity: 1;
       }
   85%  {
-    left: 25%;
-    bottom: 10px;
-    opacity: 0; 
-      }
-  95%  {
-    left:30%;
     bottom: 20px;
+    left:30%;
+    opacity: 1; 
+      }
+  90%  {
+    bottom: 20px;
+    left:30%;
     opacity: 0; 
       }      
   100% {
-    left: 30%;
-    bottom: 5px;
+    bottom: 10px;
+    left:35%;
     opacity: 0;
     }
   }
 
 @keyframes knife {
   0%   {
-      bottom: 50px;
-      opacity: 0;
-      -webkit-transform: rotate(295deg);
-              transform: rotate(295deg);
-      left:15%;
-    }
+    bottom: 50px;
+    left:15%;
+    opacity: 0;
+    -webkit-transform: rotate(295deg);
+            transform: rotate(295deg);
+      }
   10%  { 
-    left:20%;
     bottom: 40px;
+    left:20%;
     opacity: 0;
       }
   40%  {
-    left:25%;
     bottom: 30px;
+    left:25%;
     opacity: 1;
       }
   85%  {
-    left:30%;
     bottom: 20px;
+    left:30%;
     opacity: 1; 
       }
   90%  {
-    left:30%;
     bottom: 20px;
+    left:30%;
     opacity: 0; 
       }      
   100% {
-    left:35%;
     bottom: 10px;
+    left:35%;
     opacity: 0;
     }
   }
+/* knife styling ends here */    
+ 
+/* mayo styling starts here */      
 
 .mayo {
   width: 48%;
-  position: absolute;
-  z-index: 1;
   bottom: 50px;
+  display: block;
   left:1%;
   opacity: 0;
-  display: block;
+  position: absolute;
   z-index: 1;
   -webkit-animation-name: mayo;
           animation-name: mayo;
@@ -606,10 +643,10 @@ figure {
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 8.6s;
-                  animation-duration: 8.6s;
-          -webkit-animation-delay: 3.8s;
-                  animation-delay: 3.8s;
+  -webkit-animation-duration: 8.6s;
+          animation-duration: 8.6s;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
 }
 
 @-webkit-keyframes mayo{
@@ -657,30 +694,33 @@ figure {
     opacity: 1;
   }
 }
+/* mayo styling ends here */    
+
+/* sandwicheto styling starts here */    
 
 .sandwicheto{
   width: 70%;
   color: #ed1c24;
+  display: block;
   font-size: 36px;
+  left: -80%;
+  position: absolute;
   text-transform: capitalize;
   text-align: center;
   top: 20%;
-  left: -80%;
-  position: absolute;
   z-index: 100;
-  display: block;
   -webkit-animation: left-fade-span;
-  animation: left-fade-span;
+          animation: left-fade-span;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-delay: 6.7s;
           animation-delay: 6.7s;
-  -webkit-animation-timing-function:ease-out;
-          animation-timing-function:ease-out;
 }
 
 @-webkit-keyframes left-fade-span {
@@ -691,23 +731,23 @@ figure {
   top:110px;
     left: 50%;
     -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
+            transform: translateX(-53%);
     }
 40%  {
     top:110px;
     left: 50%;
       -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
+              transform: translateX(-50%);
     }
 85%  {
     top:110px;
     left: 50%; 
     -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+            transform: translateX(-50%);
     }
 100% {
     top:110px;
-    left:-500px;
+    left:-80%;
   }
 }
 
@@ -720,46 +760,48 @@ figure {
   top:110px;
     left: 50%;
     -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
+            transform: translateX(-53%);
     }
 40%  {
     top:110px;
     left: 50%;
       -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
+              transform: translateX(-50%);
     }
 85%  {
     top:110px;
     left: 50%; 
     -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+            transform: translateX(-50%);
     }
 100% {
     top:110px;
     left:-80%;
   }
 } 
+/* sandwicheto styling ends here */    
 
+/* happy-sonali styling starts here */    
 
 .happy_sonali {
   width: 70%;
-  position: absolute;
-  z-index: 100;
   bottom: 98px;
-  right: -75%;
   display: block;
+  position: absolute;
+  right: -80%;
+  z-index: 100;
   -webkit-animation: right-fade-out-sonali;
-  animation: right-fade-out-sonali;
+          animation: right-fade-out-sonali;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+  -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-delay: 6.7s;
           animation-delay: 6.7s;
-  -webkit-animation-timing-function:ease-out;
-          animation-timing-function:ease-out;
 }
 
 @-webkit-keyframes right-fade-out-sonali {
@@ -799,115 +841,121 @@ figure {
     right:-80%;
   }
 }
+/* happy-sonali styling ends here */    
+
+/* fun-food styling start here */    
 
 .fun_food{
   width: 100%;
+  align-self: center;
   color: #ed1c24;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  justify-self: center;
-  align-self: center;
   font-size: 36px;
+  justify-self: center;
+  left: -100%;
+  position: absolute;
   text-transform: capitalize;
   text-align: center;
   top: 20%;
-  left: -100%;
-  position: absolute;
   z-index: 100;
   -webkit-animation: left-fade-span;
-  animation: left-fade-span;
+          animation: left-fade-span;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 3s;
-                  animation-duration: 3s;
-          -webkit-animation-delay: 9.5s;
-                  animation-delay: 9.5s;
   -webkit-animation-timing-function:ease-out;
-          animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
 }
 
 @-webkit-keyframes left-fade-span {
-0%   { top:110px;
-    left:-80%;
+0%   {
+   top:110px;
+   left:-80%;
   }
 10%  { 
   top:110px;
-    left: 50%;
-    -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
-    }
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
+  }
 40%  {
-    top:110px;
-    left: 50%;
-      -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
-    }
+  top:110px;
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
+  }
 85%  {
-    top:110px;
-    left: 50%; 
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-    }
+  top:110px;
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
+  }
 100% {
-    top:110px;
-    left:-500px;
+   top:110px;
+   left:-80%;
   }
 }
 
 @keyframes left-fade-span {
-0%   {
-  top:110px;
-    left:-80%;
-  }
-10%  { 
-  top:110px;
-    left: 50%;
-    -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
-    }
-40%  {
-    top:110px;
-    left: 50%;
-      -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
-    }
-85%  {
-    top:110px;
-    left: 50%; 
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-    }
-100% {
+  0%   {
     top:110px;
     left:-80%;
-  }
-} 
+   }
+ 10%  { 
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+   }
+ 40%  {
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+   }
+ 85%  {
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+   }
+ 100% {
+    top:110px;
+    left:-80%;
+   }
+ }
+/* fun-food styling ends here */    
 
+/* chef styling starts here */    
 
 .chef {
   width: 70%;
-  position: absolute;
-  z-index: 100;
   bottom: 98px;
-  right: -75%;
   display: block;
+  position: absolute;
+  right: -75%;
+  z-index: 100;
   -webkit-animation: right-fade-chef;
-  animation: right-fade-chef;
+          animation: right-fade-chef;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 3s;
-                  animation-duration: 3s;
-          -webkit-animation-delay: 9.5s;
-                  animation-delay: 9.5s;
   -webkit-animation-timing-function:ease-out;
-          animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
 }
 
 @-webkit-keyframes right-fade-chef {
@@ -947,29 +995,31 @@ figure {
     right:-80%;
   }
 }
+/* chef styling ends here */   
 
+/* veg-mayo styling starts here */    
 
 .veg_mayo {
   width: 35%;
-  position: absolute;
-  z-index: 100;
   bottom: 0px;
-  right: -75%;
   display: block;
+  position: absolute;
+  right: -75%;
+  z-index: 100;
   -webkit-animation: right-fade-veg-mayo;
-  animation: right-fade-veg-mayo;
+          animation: right-fade-veg-mayo;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 7s;
-                  animation-duration: 7s;
-          -webkit-animation-delay: 12.5s;
-                  animation-delay: 12.5s;
   -webkit-animation-timing-function:ease-out;
           animation-timing-function:ease-out;
-          -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 12.5s;
+          animation-delay: 12.5s;
   }
   
   @-webkit-keyframes right-fade-veg-mayo {
@@ -1025,206 +1075,221 @@ figure {
               transform: translateX(50%);
     }
   }
+/* veg-mayo styling ends here */    
+
+/* Magic styling starts here */    
 
 .magic {
   width: 70%;
   color: #ed1c24;
+  display: block;
   font-size: 36px;
+  left: -80%;
+  position: absolute;
   text-transform: capitalize;
   text-align: center;
   top: 20%;
-  left: -80%;
-  position: absolute;
   z-index: 100;
-  display: block;
   -webkit-animation: left-fade-magic;
-  animation: left-fade-magic;
+          animation: left-fade-magic;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-          -webkit-animation-duration: 7s;
-                  animation-duration: 7s;
-          -webkit-animation-delay: 12.5s;
-                  animation-delay: 12.5s;
   -webkit-animation-timing-function:ease-out;
           animation-timing-function:ease-out;
-          -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 12.5s;
+         animation-delay: 12.5s;
 }
 
 @-webkit-keyframes left-fade-magic {
-0%   { top:110px;
-    left:-80%;
-  }
+0%   {
+   top:110px;
+   left:-80%;
+    }
 10%  { 
   top:110px;
-    left: 50%;
-    -webkit-transform: translateX(-53%);
-      transform: translateX(-53%);
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
     }
 40%  {
-    top:110px;
-    left: 50%;
-      -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
+  top:110px;
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
     }
 85%  {
-    top:110px;
-    left: 50%; 
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+  top:110px;
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
     }
 100% {
   top:110px;
-  left: 50%; 
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  }
+  left: 50%;
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
+    }
 }
 
 @keyframes left-fade-magic {
-0%   {
-  top:110px;
+  0%   {
+    top:110px;
     left:-80%;
-  }
-10%  { 
-  top:110px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-    }
-40%  {
-    top:110px;
-    left: 50%;
-      -webkit-transform: translateX(-50%); 
-      transform: translateX(-50%);
-    }
-85%  {
-    top:110px;
-    left: 50%; 
-    -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-    }
-100% {
-  top:110px;
-  left: 50%; 
-  -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-} 
+     }
+ 10%  { 
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+     }
+ 40%  {
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+     }
+ 85%  {
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+     }
+ 100% {
+   top:110px;
+   left: 50%;
+   -webkit-transform: translateX(-53%);
+           transform: translateX(-53%);
+     }
+ }
+/* Magic styling ends here */  
+ 
+/* Hat styling starts here */ 
 
 .hat {
   width: 45%;
-  position: absolute;
-  z-index: 300;
-  top: 20%;
   left: -80%; 
+  position: absolute;
+  top: 20%;
+  z-index: 300;
   -webkit-animation-name: hat; 
           animation-name: hat;
-  -webkit-animation-duration: 6.5s;
-          animation-duration: 6.5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-duration: 6.5s;
+          animation-duration: 6.5s;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;          
 }
+
 @-webkit-keyframes hat {
-  0%    {
+  0%  {
     top: 20%;
     left: -80%;
   }
-  10%   {
+  10% {
     top: 35%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
- 30%   {
+            transform: translateX(-37%);
+    }
+ 30%  {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
-}
-  40%   {
+            transform: translateX(-37%);
+    }
+  40% {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
-  85%   {
+            transform: translateX(-37%);
+    }
+  85% {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
+            transform: translateX(-37%);
+    }
   100%   {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
+            transform: translateX(-37%);
+   }
 }
+
 @keyframes hat {
-  0%    {
+  0%  {
     top: 20%;
     left: -80%;
   }
-  10%   {
+  10% {
     top: 35%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
- 30%   {
+            transform: translateX(-37%);
+    }
+ 30%  {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
-}
-  40%   {
+            transform: translateX(-37%);
+    }
+  40% {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
-  85%   {
+            transform: translateX(-37%);
+    }
+  85% {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
+            transform: translateX(-37%);
+    }
   100%   {
     top: 54%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
- }
+            transform: translateX(-37%);
+   }
 }
+/* Hat styling ends here */
+
+/* Button styling starts here */
 
 .button a {
   padding: 10px 25px;
-  position: absolute;
+  border: 1px solid;
   border-radius: 10px;
+  background-color: #3f2d89;
   color: #fff;  
-  top: 20%;
   left: -80%;
   opacity: 1;
-  z-index: 300;
+  position: absolute;
   text-transform: capitalize;
-  background-color: #3f2d89;
+  top: 20%;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+  z-index: 300;
   -webkit-animation-name: button;  
           animation-name: button;
-  -webkit-animation-duration: 4.5s;
-          animation-duration: 4.5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s; 
   -webkit-animation-fill-mode: forwards; 
           animation-fill-mode: forwards;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s; 
 }
 
 @-webkit-keyframes button {
@@ -1236,33 +1301,34 @@ figure {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
  30%   {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
 }
   40%   {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
   85%   {
-    top: 54%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
   100%   {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
 }
+
 @keyframes button {
   0%    {
     top: 20%;
@@ -1272,33 +1338,39 @@ figure {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
  30%   {
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translateX(-37%);
-  transform: translateX(-37%);
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-37%);
+            transform: translateX(-37%);
 }
   40%   {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
   85%   {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
   100%   {
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-37%);
-    transform: translateX(-37%);
+            transform: translateX(-37%);
  }
 }
+
+.button a:hover {
+  background: #fff;
+  color: #3f2d89;
+}
+/* Button styling ends here */
 
 /*=================================
   main styling ends here
@@ -1308,11 +1380,11 @@ figure {
   footer styling starts here
 =================================*/ 
 footer figure {
-  left: 0;
   width: 100%;
   bottom: -25px;
-  position: absolute;
+  display: block;
   left: 0;
+  position: absolute;
   -webkit-animation-name: table;
           animation-name: table;
   -webkit-animation-duration: 1.5s;
@@ -1321,7 +1393,6 @@ footer figure {
           animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  display: block;
 }
 
 @-webkit-keyframes table{
@@ -1333,19 +1404,10 @@ footer figure {
   from { opacity: 0;}
   to { opacity: 1;}
 }
-
-
-
-
-
  /*=================================
   footer styling ends here
 =================================*/ 
 
-
-
 /*=================================
   Advertisement styling ends here
 =================================*/ 
-}  
-
